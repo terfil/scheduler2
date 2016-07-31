@@ -20,7 +20,7 @@ public class HelloController {
     public String hello(Model model) throws IOException{
         model.addAttribute("msg", "spring mvc");
         
-        Stock stock = new Stock("AAPL");
+        Stock stock = new Stock("T");
         Calendar c = Calendar.getInstance();
         List<HistoricalQuote> list = stock.getHistory();
         model.addAttribute("alist", list);
