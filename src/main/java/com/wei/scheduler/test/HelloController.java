@@ -18,7 +18,7 @@ import yahoofinance.histquotes.HistoricalQuote;
 public class HelloController {
     @RequestMapping(value="/world",method=RequestMethod.GET)
     public String hello(Model model) throws IOException{
-        model.addAttribute("msg", "spring mvc!");
+        model.addAttribute("msg", "spring mvc wei");
         
         Stock stock = new Stock("T");
         Calendar c = Calendar.getInstance();
